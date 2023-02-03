@@ -6,8 +6,10 @@ type Object struct {
 }
 
 type Field struct {
-	Name string
-	Type string
+	Name      string
+	Type      string
+	Encrypted bool
+	Show      bool
 	/*
 		attributes is not required for this time
 		e.g.
@@ -15,3 +17,10 @@ type Field struct {
 		data length
 	*/
 }
+
+const (
+	NUMBER  string = "number"
+	STRING  string = "varchar2"
+	DATE    string = "date"
+	BOOLEAN string = "boolean"
+)
