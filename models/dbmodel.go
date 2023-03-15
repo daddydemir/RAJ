@@ -10,6 +10,7 @@ type Field struct {
 	Type      string
 	Encrypted bool
 	Show      bool
+	Default   string
 	/*
 		attributes is not required for this time
 		e.g.

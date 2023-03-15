@@ -9,7 +9,10 @@ import (
 
 func UrlDefine() http.Handler {
 	r := mux.NewRouter().StrictSlash(true)
-	//baseUrl := "api/v1/"
+	baseUrl := "/api/v1/"
+
+	r.HandleFunc(baseUrl+"create/model", test).Methods(POST)
+	r.HandleFunc("/test", test).Methods(GET)
 
 	handler := cors.AllowAll().Handler(r)
 	return handler
