@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/daddydemir/RAJ/generator"
-	"github.com/daddydemir/RAJ/models"
+	"RAJ/generator"
+	"RAJ/models"
 )
 
 func test(w http.ResponseWriter, r *http.Request) {

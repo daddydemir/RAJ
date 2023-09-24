@@ -3,7 +3,7 @@ package generator
 import (
 	"fmt"
 
-	"github.com/daddydemir/RAJ/models"
+	"RAJ/models"
 )
 
 func CreateTable(model models.Object) string {
