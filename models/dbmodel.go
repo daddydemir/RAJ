@@ -1,8 +1,8 @@
 package models
 
 type Object struct {
-	Name   string
-	Fields []Field
+	Name   string  // struct model
+	Fields []Field // table Model
 }
 
 type Field struct {

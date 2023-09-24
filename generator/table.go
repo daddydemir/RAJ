@@ -11,7 +11,11 @@ func CreateTable(model models.Object) string {
 	query := "create table " + model.Name + " ("
 
 	for _, o := range model.Fields {
-		query += " " + o.Name + " " + o.Type
+		if o.Default == "" {
+			query += " " + o.Name + " " + o.Type
+		} else {
+			query += " " + o.Name + " " + o.Type + " DEFAULT " + o.Default
+		}
 		if o != model.Fields[len(model.Fields)-1] {
 			query += ", "
 		}

@@ -17,7 +17,5 @@ func test(w http.ResponseWriter, r *http.Request) {
 	body, _ := ioutil.ReadAll(r.Body)
 	_ = json.Unmarshal(body, &model)
 	query := generator.CreateTable(model)
-	fmt.Println(query)
-
 	_ = json.NewEncoder(w).Encode(query)
 }
