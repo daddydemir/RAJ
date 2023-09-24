@@ -1,4 +1,4 @@
-module RAJ
+module github.com/daddydemir/RAJ
 
 go 1.19
 

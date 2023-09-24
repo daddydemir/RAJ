@@ -1,11 +1,11 @@
 package main
 
 import (
-	"RAJ/config"
+	"github.com/daddydemir/RAJ/config"
 	"log"
 	"net/http"
 
-	"RAJ/handlers"
+	"github.com/daddydemir/RAJ/handlers"
 )
 
 func main() {

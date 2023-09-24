@@ -1,6 +1,6 @@
 package generator
 
-import "RAJ/models"
+import "github.com/daddydemir/RAJ/models"
 
 type Generate interface {
 	GenerateMySQL(model models.Object) string
