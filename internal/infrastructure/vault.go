@@ -45,7 +45,7 @@ func GetSecrets(client *api.Client) map[string]interface{} {
 	return secret.Data
 }
 
-func WriteSecrets(client *api.Client, path string, data map[string]interface{}) {
+func WriteSecrets(client *api.Client, data map[string]interface{}) {
 	_, err := client.KVv2("daddydemir").Put(context.Background(), "raj", data)
 	if err != nil {
 		slog.Error(err.Error())
